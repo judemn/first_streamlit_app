@@ -1,6 +1,6 @@
 import streamlit
 
-streamlit.title('My Parents New Healthy Diner')
+streamlit.title('My Mom's New Healthy Diner')
 
 streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
@@ -44,7 +44,7 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 #allow the end user to add a fruit to the list
-add_my_fruit = streamlit.dataframe, header("What fruit would you like to add:  ")
+add_my_fruit = streamlit.text_input("What fruit would you like to add:", 'Jackfruit')
 streamlit.write("Thanks for adding", add_my_fruit)
 
 
